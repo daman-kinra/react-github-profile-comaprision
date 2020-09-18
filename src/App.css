@@ -1,0 +1,52 @@
+.Daman
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-around;
+  background-color: rgb(233, 233, 126);
+}
+.Shivam
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  justify-content: space-around;
+  width: 200px;
+  border-radius: 40px;
+  background-color: rgb(26, 167, 155);
+  position: fixed;
+  flex-direction: column;
+}
+button
+{
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  background-color: red;
+
+}
+.inner
+{
+  margin-bottom: 40px;
+}
+p{
+  font-size: 30px;
+  color: azure;
+  animation: spin 1s ease;
+}
+@keyframes spin{
+  0%{
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+/* @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } */
