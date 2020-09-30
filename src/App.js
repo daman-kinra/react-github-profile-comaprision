@@ -48,6 +48,11 @@ function App() {
 
     return (
         <div className='app'>
+            <div className="heading">
+                <h3>
+                    gitHub-profile-comparision
+                </h3>
+            </div>
             <div className="inputs">
             <input type="text"
             value={input1}

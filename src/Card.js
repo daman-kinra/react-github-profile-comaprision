@@ -3,7 +3,7 @@ import './Card.css'
 
 function Card(props) {
     return (
-        <div className="outer-div">
+        <div className="outer-div point-effect">
             <div className="inner-div">
                 <div className="user-div">
                 <div className="img-div">

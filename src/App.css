@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 *{
-    font-family: 'Piazzolla', serif;
-    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+}
+.heading{
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: -15px;
+}
+h3{
+    font-size: 28px;
 }
 .app{
     width: 100%;
@@ -16,7 +24,7 @@
     flex: 1;
     margin: 20px;
     padding-left: 15px;
-    height: 30px;
+    height: 35px;
     border: 1px solid black;
     box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.15);   
     background-color: #ecf4f3;
@@ -28,7 +36,7 @@
     margin-top: 10px;
 }
 button{
-    height: 30px;
+    height: 35px;
     width: 140px;
     cursor: pointer;
     border: 1px solid black;
@@ -63,10 +71,21 @@ button{
         padding-left: 15px;
         padding-right: 20px;
     }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .inp1, .inp2{
+        height: 35px;
+    }
 }
 input:focus{
+    background-color: rgba(255,255,255,0.6);
     box-shadow: 2px 1px 3px 3px rgba(0,0,0,0.18);
 }
 button:focus{
     box-shadow: 0.5px 0.5px 1.5px 1.5px rgba(0,0,0,0.18);
+    background-color: rgba(255,255,255,0.6);
 }
