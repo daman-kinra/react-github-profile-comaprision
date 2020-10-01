@@ -7,7 +7,9 @@ function Card(props) {
             <div className="inner-div">
                 <div className="user-div">
                 <div className="img-div">
+                    <a href={props.user.data.html_url} target="blank">
                     <img src={props.user.data.avatar_url} alt=""/>
+                    </a>
                 </div>
                 <div className="acc-div">
                    <div className="username">
