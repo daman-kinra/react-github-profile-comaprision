@@ -14,15 +14,19 @@ function App() {
         if(input1 !== ''){
             axios.get(`https://api.github.com/users/${input1}`)
             .then(data =>{
-                console.log(data);
+                
                 setUser1(data);
+                setInput1('')
+            }).catch(err=>{
                 setInput1('')
             })}
             if(input2 !== ''){
             axios.get(`https://api.github.com/users/${input2}`)
             .then(data =>{
-                console.log(data);
+                
                 setUser2(data);
+                setInput2('')
+            }).catch(err=>{
                 setInput2('')
             })}  
     }
@@ -32,17 +36,21 @@ function App() {
             if(input1 !== ''){
             axios.get(`https://api.github.com/users/${input1}`)
             .then(data =>{
-                console.log(data);
                 setUser1(data);
                 setInput1('')
-            })}
+            })
+        .catch(err=>{
+            setInput1('')
+        })}
             if(input2 !== ''){
             axios.get(`https://api.github.com/users/${input2}`)
             .then(data =>{
-                console.log(data);
                 setUser2(data);
                 setInput2('')
-            })}  
+            })
+        .catch(err=>{
+            setInput2('')
+        })}  
         }
     }
 
