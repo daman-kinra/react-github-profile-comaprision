@@ -18,6 +18,7 @@ function App() {
                 setUser1(data);
                 setInput1('')
             }).catch(err=>{
+                alert('UserName ONE is not correct')
                 setInput1('')
             })}
             if(input2 !== ''){
@@ -27,6 +28,7 @@ function App() {
                 setUser2(data);
                 setInput2('')
             }).catch(err=>{
+                alert('UserName TWO is not correct')
                 setInput2('')
             })}  
     }
@@ -40,6 +42,7 @@ function App() {
                 setInput1('')
             })
         .catch(err=>{
+            alert('UserName ONE is not correct')
             setInput1('')
         })}
             if(input2 !== ''){
@@ -49,6 +52,7 @@ function App() {
                 setInput2('')
             })
         .catch(err=>{
+            alert('UserName TWO is not correct')
             setInput2('')
         })}  
         }
